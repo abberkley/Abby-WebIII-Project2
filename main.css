@@ -1,0 +1,12 @@
+@import "typography.css";
+@import "color.css";
+
+* {
+    font-size: 10px;
+    margin: 0 auto;
+    color: black;
+}
+
+header {
+    background-color: var(--color-primary);
+}
