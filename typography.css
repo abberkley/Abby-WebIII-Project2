@@ -17,6 +17,7 @@ h1 {
     font-weight: 600;
     line-height: 4.1rem;
     text-transform: uppercase;
+    margin: 1.1rem 0;
 }
 
 h2 {
@@ -34,7 +35,7 @@ h3 {
     font-weight: 500;
     line-height: 3rem;
     text-transform: capitalize;
-    margin: 0;
+    margin: 2rem 0 0;
 }
 
 body {
@@ -42,9 +43,14 @@ body {
     font-size: var(--size-body);
     font-weight: 400;
     line-height: 2.6rem;
+    
 }
 
-nav {
+p {
+    margin: 5px 0;
+}
+
+nav, .btn {
     font-family: var(--text-secondary);
     font-size: var(--size-link);
     font-weight: 600;
@@ -61,11 +67,32 @@ nav {
     color: white;
 }
 
+.article-link {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.article-link:hover {
+    color: black;
+}
+
 ul {
     list-style-type: none;
+    padding-inline-start: 0;
 }
 
 a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--color-primary);
+}
+
+.header-links a:hover {
+    color: var(--color-secondary);
+}
+
+.list-top {
+    margin-top: 0;
+}

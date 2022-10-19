@@ -3,7 +3,6 @@
 
 html {
     font-size: 10px;
-    margin: 0 auto;
     color: black;
 }
 
@@ -11,6 +10,14 @@ img {
     width: 100%;
 }
 
+main {
+    width: 91%;
+    margin: 2.6rem auto;
+}
+
+/* 
+        HEADER STYLING
+                             */
 
 header {
     display: grid;
@@ -30,25 +37,35 @@ header .header-links {
 
 .header-links ul {
     display: flex;
-    width: 23%;
+    width: 28%;
     justify-content: space-between;
 
 }
 
 nav {
     background-color: var(--color-secondary);
+    padding-top: 2.1rem;
+    padding-bottom: 2.1rem;
+    box-shadow: 0px 4px 13px 7px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
 }
 
 nav ul{
     display: flex;
-    color: black;
-    justify-content: center;
-    justify-items: space-between;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
 }
 
-.latest-articles--header {
-    grid-area: header;
+nav li a{
+    color: black;
 }
+
+/* 
+        LATEST ARTICLES STYLING
+                                    */
+
 
 .latest-articles--hero {
     grid-area: main;
@@ -58,29 +75,145 @@ nav ul{
     grid-area: aside;
 }
 
-.latest-articles { 
+ul.latest-articles--side {
+    margin-top: 0;
+}
+
+.latest-articles--side p{
+    margin-top: 0;
+}
+
+.latest-articles--content { 
     display: grid;
 
     grid-template-areas: 
-    "header header"
     "main aside" ;
 
-    grid-template-columns: 569px auto;  /*figure out the spacing*/
-    grid-column-gap: 5.4rem;
+    grid-template-columns: 57% 36%;
+    justify-content: space-between;
+
+    margin: 2.1rem auto;
+    width: 77%;
 
 }
 
-.more-articles {
+.latest-articles--hero h2 {
+    margin: 1rem 0;
+}
+
+.latest-articles--side li {
+    margin-bottom: 3.5rem;
+}
+
+/* 
+        LIFE & SPORTS STYLING
+                                    */
+
+
+.life-and-sports {
     display: grid;
-
     grid-template-areas: 
-    ".more-articles--header"
-    "more-articles--list";
+    ".life . .sports";
 
+    grid-template-columns: 57% 36%;
+    justify-content: space-between;
+}
+
+.sports-articles, .life-article-list {
+    width: 84%;
+    margin: 2rem auto;
+}
+
+/* 
+        MORE ARTICLE STYLING
+                                   
+                                    */
+.more-articles {
+    margin: 5.5rem auto;
 }
 
 .more-articles--list {
-display: grid;
-grid-template-columns: 250px 250px 250px 250px;
-grid-template-rows: 265px 265px 265px 265px;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(3, 285px);
+    grid-gap: 4rem 3.2rem;
+
+    width: 93%;
+    margin: 2.9rem auto;
 }
+
+.btn {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 2rem;
+    margin: 2rem 40rem;
+    width: 31%;
+    border: none;
+
+}
+
+.btn:hover {
+    background-color: var(--color-secondary);
+    color: black;
+}
+
+
+
+/* 
+        FOOTER STYLING
+                                   
+                                    */
+
+footer .logo {
+    grid-area: header;
+}
+
+footer .footer-links {
+    grid-area: links;
+    justify-self: left;
+}
+
+footer .business-info {
+    grid-area: business;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer .website-info {
+    grid-area: website;
+    justify-self: right;
+}
+
+footer .footer-icons{
+grid-area: icons;
+justify-self: center;
+justify-content: space-between;
+}
+
+footer a:hover {
+    color:var(--color-secondary);
+}
+
+.footer-icons img {
+    width: 35%;
+}
+                                    
+.footer-content {
+    display: grid;
+
+    grid-template-areas:
+    ". . ." 
+    ". header ."
+    "links business website"
+    ". icons ."
+    ". . .";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 4rem;
+
+    width: 91%;
+    margin: 4.5rem auto ;
+
+}
+
