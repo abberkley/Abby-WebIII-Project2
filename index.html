@@ -3,18 +3,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>Home</title>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">Xenia Daily Gazette</a>
-        <p class="header-date">October 13, 2022</p>
-        <ul class="header-links">
-            <li><a href="">jobs</a></li>
-            <li><a href="">classified</a></li>
-            <li><a href="">subscribe</a></li>
-        </ul>
-        <nav>
+    <header class="color-background" id="top">
+        <a href="index.html" class="logo"><img src="images/Website-logo.png" alt="Xenia Daily Gazette Logo"></a>
+        <div class="header-links">
+            <p class="header-date">October 13, 2022</p>
+            <ul>
+                <li><a href="">jobs</a></li>
+                <li><a href="">classified</a></li>
+                <li><a href="">subscribe</a></li>
+            </ul></div>
+    </header>
+    <nav>
             <ul class="nav-links">
                 <li><a href="">Home</a></li>
                 <li><a href="">News</a></li>
@@ -22,221 +25,242 @@
                 <li><a href="">Obituraries</a></li>
                 <li><a href="">Opinions</a></li>
             </ul>
-        </nav>
-    </header>
-    <section class="latest-articles">
-        <h1>latest news</h1>
-        <div class="latest-articles--header">
-            <img src="images/news-header-pic.png" alt="">
-            <h2>Suspect in Xenia Township shooting caught</h2>
-            <p class="article-date">OCT 12, 2022</p>
-            <p>XENIA TOWNSHIP — The man accused of shooting an 18-year-old femal in Xenia Township Monday morning has been arrested.</p>
-            <a href="" class="article-link">See more</a>
-        </div>
-        <ul class="latest-articles--list">
-            <li>
-                <a href="">
-                    <h3>holden leads on field in classroom</h3>
+     </nav>
+     <main>
+        <section class="latest-articles">
+            <h1 class="latest-articles--header">latest news <hr></h1>
+            <div class="latest-articles--content">
+                <div class="latest-articles--hero">
+                    <img src="images/news-header-pic.png" alt="">
+                    <h2>Suspect in Xenia Township shooting caught</h2>
                     <p class="article-date">OCT 12, 2022</p>
-                </a>
-            </li>
-            <li>
+                    <p>XENIA TOWNSHIP — The man accused of shooting an 18-year-old female in Xenia Township Monday morning has been arrested.</p>
+                    <a href="">
+                        <p class="article-link">See More</p>
+                    </a>
+                </div>
+                <ul class="latest-articles--side">
+                    <li>
+                        <a href="">
+                            <h3 class="list-top">holden leads on field in classroom</h3>
+                            <p class="article-date">OCT 12, 2022</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>books and buckeye brownies</h3>
+                            <p class="article-date">OCT 11, 2022</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>bellbrook superintendent takes plea deal</h3>
+                            <p class="article-date">OCT 11, 2022</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>after 200 years, middle run baptist still going strong</h3>
+                            <p class="article-date">OCT 10, 2022</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>FVPC honors those who help victims</h3>
+                            <p class="article-date">OCT 10, 2022</p>
+                        </a>
+                    </li>
+                </ul>          
+            </div>
+        </section>
+        <div class="life-and-sports">
+            <section class="life">
+                <h1>life</h1>
+                <hr>
+                <ul class="life-article-list">
+                    <li>
+                        <a href="">
+                            <h3>‘A long time coming’</h3>
+                            <p class="article-date">OCT 1, 2022</p>
+                            <p>XENIA — Prior to the groundbreaking ceremony for the new Warner Middle School Thursday, Journey’s hit “Don’t Stop Believin’ ” blared from a portable speaker.</p>
+                        </a>     
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>beavercreek company qQE ready to grow</h3>
+                            <p class="article-date">SEP 24, 2022</p>
+                            <p>BEAVERCREEK — Calling it a “Great Ohio Story,” Gov. Mike DeWine and a cadre of other state and federal elected officials toured Qual...</p>
+                        </a>     
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>xCS to break ground on new warner</h3>
+                            <p class="article-date">AUG 1, 2022</p>
+                            <p>XENIA — Xenia Community Schools is holding a groundbreaking ceremony to kick off construction of the new Warner Middle School</p>
+                        </a>     
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>policy looking for missing women</h3>
+                            <p class="article-date">JUN 21, 2022</p>
+                            <p>XENIA —Xenia police are asking for the public’s help in locating a missing person.</p>
+                        </a>     
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>deadlines approaching for block party and parade</h3>
+                            <p class="article-date">APR 25, 2022</p>
+                            <p>Deadlines are fast approaching for spots in the Fairborn 2022 July 3 block party and July 4 parade. Interested vendors should grab their spots by June 17 for the parade and June 21 for the block party.</p>
+                        </a>     
+                    </li>
+                </ul>
+            </section>
+            <section class="sports">
+                <h1>sports</h1>
+                <hr>
+                <div class="sports-articles">
+                    <div class="sports-articles--header">
+                        <img src="images/sports-header-pic.png" alt="">
+                        <h3>fairborn-Xenia Match postponed</h3>
+                        <p>XENIA — Wednesday’s girls soccer match between Fairborn and Xenia was postponed due to weather conditions.</p>
+                        <a href="" >
+                            <p class="article-link">See More</p>
+                        </a>
+                </div>
                 <a href="">
-                    <h3>books and buckeye brownies</h3>
-                    <p class="article-date">OCT 11, 2022</p>
+                    <h3>Four records broken in xenia’s week 8 win</h3>
+                    <p class="article-date">Oct 12, 2022</p>
+                    <p>XENIA — A night in which several records were broken by Xenia during its 42-7 win at home against Stebbins could be leading to more as the regular season nears its end.</p>
                 </a>
-            </li>
-            <li>
-                <a href="">
-                    <h3>bellbrook superintendent takes plea deal</h3>
-                    <p class="article-date">OCT 11, 2022</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <h3>after 200 years, middle run baptist still going strong</h3>
-                    <p class="article-date">OCT 10, 2022</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <h3>FVPC honors those who help victims</h3>
-                    <p class="article-date">OCT 10, 2022</p>
-                </a>
-            </li>
-        </ul>
-    </section>
-    <div class="life-and-sports">
-        <section class="life">
-            <h1>life</h1>
-            <ul class="life-article-list">
+                </div>
+            </section>
+        </div>
+        <section class="more-articles">
+            <h1 class="more-articles--header">more stories</h1>
+            <hr>
+            <ul class="more-articles--list">
                 <li>
                     <a href="">
-                        <h3>‘A long time coming’</h3>
-                        <p class="article-date">OCT 1, 2022</p>
-                        <p>XENIA — Prior to the groundbreaking ceremony for the new Warner Middle School Thursday, Journey’s hit “Don’t Stop Believin’ ” blared from a portable speaker.</p>
-                    </a>     
+                        <img src="images/more-stories-article-pic03.png" alt="">
+                        <h3>fairborn high school class of 1966 plans 55th reunion</h3>
+                        <p class="article-date">SEP 25, 2022</p>
+                    </a>
                 </li>
                 <li>
                     <a href="">
-                        <h3>beavercreek company qQE ready to grow</h3>
-                        <p class="article-date">SEP 24, 2022</p>
-                        <p>BEAVERCREEK — Calling it a “Great Ohio Story,” Gov. Mike DeWine and a cadre of other state and federal elected officials toured Qual...</p>
-                    </a>     
+                        <img src="images/more-stories-article-pic06.png" alt="">
+                        <h3>arrowood all-stars</h3>
+                        <p class="article-date">SEP 15, 2022</p>
+                    </a>
                 </li>
                 <li>
                     <a href="">
-                        <h3>xCS to break ground on new warner</h3>
-                        <p class="article-date">AUG 1, 2022</p>
-                        <p>XENIA — Xenia Community Schools is holding a groundbreaking ceremony to kick off construction of the new Warner Middle School</p>
-                    </a>     
+                        <img src="images/more-stories-article-pic09.png" alt="">
+                        <h3>cedar cliff annouces students of month</h3>
+                        <p class="article-date">SEP 14, 2022</p>
+                    </a>
                 </li>
                 <li>
                     <a href="">
-                        <h3>policy looking for missing women</h3>
-                        <p class="article-date">JUN 21, 2022</p>
-                        <p>XENIA —Xenia police are asking for the public’s help in locating a missing person.</p>
-                    </a>     
+                        <img src="images/more-stories-article-pic12.png" alt="">
+                        <h3>vaccine available for 16 and over in greene county</h3>
+                        <p class="article-date">AUG 2, 2022</p>
+                    </a>
                 </li>
                 <li>
                     <a href="">
-                        <h3>deadlines approaching for block party and parade</h3>
-                        <p class="article-date">APR 25, 2022</p>
-                        <p>Deadlines are fast approaching for spots in the Fairborn 2022 July 3 block party and July 4 parade. Interested vendors should grab their spots by June 17 for the parade and June 21 for the block party.</p>
-                    </a>     
+                        <img src="images/more-stories-article-pic02.png" alt="">
+                        <h3>sugar maple festival cancelled</h3>
+                        <p class="article-date">JULY 25, 2022</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/more-stories-article-pic05.png" alt="">
+                        <h3>grandparents raising grandchildren</h3>
+                        <p class="article-date">JULY 12, 2022</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/more-stories-article-pic08.png" alt="">
+                        <h3>negotations between township</h3>
+                        <p class="article-date">JUN 24, 2022</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/more-stories-article-pic11.png" alt="">
+                        <h3>anesthesioligist saves life on tennis court</h3>
+                        <p class="article-date">JUN 10, 2022</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/more-stories-article-pic01.png" alt="">
+                        <h3>horse escapes track during harness race program</h3>
+                        <p class="article-date">MAY 31, 2022</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/more-stories-article-pic04.png" alt="">
+                        <h3>ohio task force 1 returns home</h3>
+                        <p class="article-date">MAY 22, 2022</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/more-stories-article-pic07.png" alt="">
+                        <h3>two more charged in ford road incident</h3>
+                        <p class="article-date">MAY 5, 2022</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/more-stories-article-pic10.png" alt="">
+                        <h3>anna struewing’s chicken and noodles</h3>
+                        <p class="article-date">APR 28, 2022</p>
+                    </a>
                 </li>
             </ul>
+           <a href="#top" class="btn-link"> <button class="btn nav-links">Scroll to the Top</button></a>
         </section>
-        <section class="sports">
-            <h1>sports</h1>
-            <div class="sports-header-article">
-                    <img src="images/sports-header-pic.png" alt="">
-                    <h3>fairborn-Xenia Match postponed</h3>
-                    <p></p>
-                    <a href="">See More</a>
-            </div>
-            <a href="" class="sports-article">
-                <h3>Four records broken in xenia’s week 8 win</h3>
-                <p class="article-date">Oct 12, 2022</p>
-                <p>XENIA — A night in which several records were broken by Xenia during its 42-7 win at home against Stebbins could be leading to more as the regular season nears its end.</p>
-            </a>
-        </section>
-    </div>
-    <section class="more-articles">
-        <h1>more stories</h1>
-        <ul class="more-articles-list">
-            <li>
-                <a href="">
-                    <img src="images/more-stories-article-pic01.png" alt="">
-                    <h3>fairborn high school class of 1966 plans 55th reunion</h3>
-                    <p class="article-date">SEP 25, 2022</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/more-stories-article-pic02.png" alt="">
-                    <h3>arrowood all-stars</h3>
-                    <p class="article-date">SEP 15, 2022</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/more-stories-article-pic03.png" alt="">
-                    <h3>cedar cliff annouces students of month</h3>
-                    <p class="article-date">SEP 14, 2022</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/more-stories-article-pic04.png" alt="">
-                    <h3>vaccine available for 16 and over in greene county</h3>
-                    <p class="article-date">AUG 2, 2022</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/more-stories-article-pic05.png" alt="">
-                    <h3>sugar maple festival cancelled</h3>
-                    <p class="article-date">JULY 25, 2022</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/more-stories-article-pic06.png" alt="">
-                    <h3>grandparents raising grandchildren</h3>
-                    <p class="article-date">JULY 12, 2022</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/more-stories-article-pic07.png" alt="">
-                    <h3>negotations between township</h3>
-                    <p class="article-date">JUN 24, 2022</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/more-stories-article-pic08.png" alt="">
-                    <h3>anesthesioligist saves life on tennis court</h3>
-                    <p class="article-date">JUN 10, 2022</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/more-stories-article-pic09.png" alt="">
-                    <h3>horse escapes track during harness race program</h3>
-                    <p class="article-date">MAY 31, 2022</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/more-stories-article-pic10.png" alt="">
-                    <h3>ohio task force 1 returns home</h3>
-                    <p class="article-date">MAY 22, 2022</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/more-stories-article-pic11.png" alt="">
-                    <h3>two more charged in ford road incident</h3>
-                    <p class="article-date">MAY 5, 2022</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/more-stories-article-pic12.png" alt="">
-                    <h3>anna struewing’s chicken and noodles</h3>
-                    <p class="article-date">APR 28, 2022</p>
-                </a>
-            </li>
-        </ul>
-    </section>
-    <footer>
-        <a href="index.html" class="logo">Xenia Daily Gazette</a>
-        <div class="footer-info">
+     </main>
+    <footer class="color-background">
+        <div class="footer-content">
+            <a href="index.html" class="logo"><img src="images/Website-logo.png" alt="Xenia Daily Gazette Logo"></a>
             <ul class="footer-links">
                 <li>
-                    <a href="">privacy policy</a>
-                    <a href="">advertise with us</a>
+                    <a href="">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="">Advertise with Us</a>
                 </li>
             </ul>
             <div class="business-info">
-                <p>Phone: 937-372-4444</p>
-                <p>Address: 1836 West Park Square, Xenia OH, 45385</p>
+                <p>937-372-4444</p>
+                <p>1836 West Park Square, Xenia OH, 45385</p>
             </div>
-            <a href="" class="website-info">
-                <p>PublicNoticesOhio.com</p>
-                <p>Photo Store</p>
-                <p>Local Business Directory</p>
+            <div class="website-info">
+                <a href="">
+                    <p>PublicNoticesOhio.com</p>
+                </a>
+                <a href="">
+                    <p>Photo Store</p>
+                </a>
+                <a href="">
+                    <p>Local Business Directory</p> 
+                </a>
+            </div>
+         <div class="footer-icons">
+            <a href="">
+                <img src="images/facebook-icon.png" alt="facebook icon">
+            </a>
+            <a href="">
+                <img src="images/twitter-icon.png" alt="twitter icon">
             </a>
         </div>
-        <div class="footer-icons">
-            <a href="">
-                <img src="" alt="">
-            </a>
-            <a href="">
-                <img src="" alt="">
-            </a>
         </div>
     </footer>  
 </body>

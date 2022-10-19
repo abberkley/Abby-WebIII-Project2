@@ -1,0 +1,16 @@
+:root {
+    --color-primary: #274A8E;
+    --color-secondary: #E3E7F0;
+}
+
+.color-background {
+    background-color: var(--color-primary);
+}
+
+header a, footer a {
+    color: white;
+}
+
+a {
+    color: black;
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+:root {
+    --text-primary: 'Playfair Display';
+    --text-secondary: 'Poppins';
+
+    --size-h1: 4.8rem;
+    --size-h2: 3.2rem;
+    --size-h3: 2rem;
+    --size-body: 1.6rem;
+    --size-link: 2rem;
+}
+
+/* base styles */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+
+body {
+    font-family: var(--text-secondary);
+    font-size: var(--size-body);
+    font-weight: 400;
+    line-height: 2.6rem;
+    
+}
+
+h1 {
+    font-family: var(--text-primary);
+    font-size: var(--size-h1);
+    font-weight: 600;
+    line-height: 4.1rem;
+    text-transform: uppercase;
+    margin: 1.1rem 0;
+}
+
+h2 {
+    font-family: var(--text-primary);
+    font-size: var(--size-h2);
+    font-weight: 600;
+    line-height: 3.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+h3 {
+    font-family: var(--text-primary);
+    font-size: var(--size-h3);
+    font-weight: 500;
+    line-height: 3rem;
+    text-transform: capitalize;
+    margin: 2rem 0 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+nav, .btn {
+    font-family: var(--text-secondary);
+    font-size: var(--size-link);
+    font-weight: 600;
+    line-height: 4.1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+/* specific styles */
+
+.article-date {
+    color: var(--color-primary);
+    font-weight: 500;
+    margin: 5 auto;
+}
+
+.article-link {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.article-link:hover {
+    color: black;
+}
+
+.color-background {
+    color: white;
+}
+
+.header-links {
+    text-transform: uppercase;
+}
+
+.header-links a:hover {
+    color: var(--color-secondary);
+}
+
+.list-top {
+    margin-top: 0;
+}

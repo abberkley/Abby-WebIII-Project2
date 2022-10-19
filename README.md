@@ -1,2 +1,2 @@
 # Web III Project 2
- Redesign of News Website
+ Redesign of Xenia's Gazette Website 
