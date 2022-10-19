@@ -15,9 +15,8 @@ main {
     margin: 2.6rem auto;
 }
 
-/* 
-        HEADER STYLING
-                             */
+
+/*  HEADER & NAV BAR STYLING */
 
 header {
     display: grid;
@@ -62,13 +61,16 @@ nav li a{
     color: black;
 }
 
-/* 
-        LATEST ARTICLES STYLING
-                                    */
+/* LATEST ARTICLES STYLING  */
 
 
 .latest-articles--hero {
     grid-area: main;
+}
+
+
+.latest-articles--hero h2 {
+    margin: 1rem 0;
 }
 
 .latest-articles--side {
@@ -83,6 +85,10 @@ ul.latest-articles--side {
     margin-top: 0;
 }
 
+.latest-articles--side li {
+    margin-bottom: 3.5rem;
+}
+
 .latest-articles--content { 
     display: grid;
 
@@ -93,27 +99,17 @@ ul.latest-articles--side {
     justify-content: space-between;
 
     margin: 2.1rem auto;
-    width: 77%;
+    width: 84%;
 
 }
 
-.latest-articles--hero h2 {
-    margin: 1rem 0;
-}
-
-.latest-articles--side li {
-    margin-bottom: 3.5rem;
-}
-
-/* 
-        LIFE & SPORTS STYLING
-                                    */
+/*  LIFE & SPORTS STYLING  */
 
 
 .life-and-sports {
     display: grid;
     grid-template-areas: 
-    ".life . .sports";
+    "life  sports";
 
     grid-template-columns: 57% 36%;
     justify-content: space-between;
@@ -124,23 +120,7 @@ ul.latest-articles--side {
     margin: 2rem auto;
 }
 
-/* 
-        MORE ARTICLE STYLING
-                                   
-                                    */
-.more-articles {
-    margin: 5.5rem auto;
-}
-
-.more-articles--list {
-    display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-template-rows: repeat(3, 285px);
-    grid-gap: 4rem 3.2rem;
-
-    width: 93%;
-    margin: 2.9rem auto;
-}
+/*  MORE ARTICLE STYLING  */
 
 .btn {
     background-color: var(--color-primary);
@@ -157,12 +137,21 @@ ul.latest-articles--side {
     color: black;
 }
 
+.more-articles {
+    margin: 5.5rem auto;
+}
 
+.more-articles--list {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(3, 285px);
+    grid-gap: 4rem 3.2rem;
 
-/* 
-        FOOTER STYLING
-                                   
-                                    */
+    width: 93%;
+    margin: 2.9rem auto;
+}
+
+/* FOOTER STYLING */
 
 footer .logo {
     grid-area: header;
@@ -175,7 +164,7 @@ footer .footer-links {
 
 footer .business-info {
     grid-area: business;
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     text-align: center;
 }
