@@ -1,12 +1,86 @@
 @import "typography.css";
 @import "color.css";
 
-* {
+html {
     font-size: 10px;
     margin: 0 auto;
     color: black;
 }
 
+img {
+    width: 100%;
+}
+
+
 header {
-    background-color: var(--color-primary);
+    display: grid;
+}
+
+header .logo {
+    margin: 0 auto;
+}
+
+header .header-links {
+    display: flex;
+    width: 86%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+.header-links ul {
+    display: flex;
+    width: 23%;
+    justify-content: space-between;
+
+}
+
+nav {
+    background-color: var(--color-secondary);
+}
+
+nav ul{
+    display: flex;
+    color: black;
+    justify-content: center;
+    justify-items: space-between;
+}
+
+.latest-articles--header {
+    grid-area: header;
+}
+
+.latest-articles--hero {
+    grid-area: main;
+}
+
+.latest-articles--side {
+    grid-area: aside;
+}
+
+.latest-articles { 
+    display: grid;
+
+    grid-template-areas: 
+    "header header"
+    "main aside" ;
+
+    grid-template-columns: 569px auto;  /*figure out the spacing*/
+    grid-column-gap: 5.4rem;
+
+}
+
+.more-articles {
+    display: grid;
+
+    grid-template-areas: 
+    ".more-articles--header"
+    "more-articles--list";
+
+}
+
+.more-articles--list {
+display: grid;
+grid-template-columns: 250px 250px 250px 250px;
+grid-template-rows: 265px 265px 265px 265px;
 }
